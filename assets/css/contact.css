@@ -1,0 +1,93 @@
+body{
+  background-image: url("../images/ContactBG.png");
+background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+}
+.gif{
+  border-radius: 50%;
+  width: 15%;
+  margin-left: auto;
+  margin-bottom: 30px;
+margin-right: auto;
+display: block;
+height: 200px;
+margin-top: -80px;
+}
+ .links a{
+  text-decoration: none;
+color:#fff;
+}
+
+ h1.yellow {
+  color: #FFDD1B;
+  text-shadow: 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px#FFDD1B, 0 0 10px #FFDD1B, 0 0 10px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B;
+
+}
+
+
+p{
+  font-size: 20px;
+}
+
+.yellow {
+    border-radius: 200px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 65px;
+    letter-spacing: 7px;
+    line-height: 0.4;
+    filter: drop-shadow(0px 0px 5px #FFDD1B);
+    -webkit-text-stroke: 1px #fff;
+    display: inline-block;
+    position: relative;
+    animation: glow 2900ms ease infinite forwards;
+}
+
+@keyframes glow {
+    0% {
+
+    }
+    50% {
+        filter: drop-shadow(0px 0px 10px #FFDD1B);
+    }
+    100% {
+
+    }
+}
+
+i {
+  color: #FFFFFF;
+  /* font-size: 60px; */
+  text-shadow: 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B;
+}
+
+
+
+i.yellow {
+    border-radius: 200px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+    /* color: #FFFFFF; */
+    line-height: 0.4;
+    filter: drop-shadow(0px 0px 5px #FFDD1B);
+    -webkit-text-stroke: 3px #fff;
+    display: inline-block;
+    position: relative;
+    animation: glow 2900ms ease infinite forwards;
+}
+
+@media screen and (min-width: 1668px){
+body{
+  margin-left: 250px;
+}
+}
+@media screen and (max-width: 540px) {
+  .gif{
+    width: 25%;
+    height: 100px;
+    margin-top: 1px;
+  }
+}

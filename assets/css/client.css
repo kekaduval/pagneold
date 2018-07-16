@@ -1,0 +1,123 @@
+body{
+  background-image: url("../images/ClientsBG.png");
+  background-attachment: fixed;
+
+}
+
+.row{
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+
+ h1.yellow {
+  color: #FFDD1B;
+  text-shadow: 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px#FFDD1B, 0 0 10px #FFDD1B, 0 0 10px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B;
+}
+
+p{
+  font-size: 20px;
+}
+
+.yellow {
+    border-radius: 200px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 65px;
+    letter-spacing: 7px;
+    line-height: 0.4;
+    filter: drop-shadow(0px 0px 5px #FFDD1B);
+    -webkit-text-stroke: 1px #fff;
+    display: inline-block;
+    position: relative;
+    animation: glow 2900ms ease infinite forwards;
+}
+
+@keyframes glow {
+    0% {
+    }
+    50% {
+        filter: drop-shadow(0px 0px 10px #FFDD1B);
+    }
+    100% {
+    }
+}
+
+i {
+  color: #FFFFFF;
+  /* font-size: 60px; */
+  text-shadow: 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B;
+}
+
+i.yellow {
+    border-radius: 200px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+    /* color: #FFFFFF; */
+    line-height: 0.4;
+    filter: drop-shadow(0px 0px 5px #FFDD1B);
+    -webkit-text-stroke: 3px #fff;
+    display: inline-block;
+    position: relative;
+    animation: glow 2900ms ease infinite forwards;
+}
+
+img:hover{
+  /* opacity: 0.4; */
+}
+h1:hover{
+  opacity: 1;
+}
+
+
+/* boxes */
+/* Parent Container */
+.content_img{
+ position: relative;
+ width: 25%;
+ height: 25%;
+ /* float: left; */
+ /* margin-right: 10px; */
+ text-align: center;
+ display: inline-block;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ top: 130px;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear;
+ transition: visibility 0s, opacity 0.5s linear;
+ text-align: center;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ /* cursor: pointer; */
+ opacity: 0.5;
+}
+
+.content_img:hover div{
+ width: 367px;
+ visibility: visible;
+ opacity: 1;
+}
+
+/*Responsive  */
+@media screen and (max-width: 540px){
+.content_img{
+ width: 50%;
+ height: 50%;
+ margin-bottom: 10px;
+}
+.content_img:hover div{
+display: none;
+}
+}

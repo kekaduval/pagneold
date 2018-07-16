@@ -1,0 +1,311 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+.services-tools ul li, .contact-social-icons ul a li {
+  text-align: center;
+
+}
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  /* background-color: #000000; */
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  margin-bottom: 60px;
+}
+
+/* Lecriture et la couleur du font */
+ h2, h3, h4, h5 {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+.imageLogo {
+  margin-left: -2;
+}
+
+/*   ecriture de about et services et la couleur*/
+
+p {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* c koi sa? */
+
+body>.container-fluid {
+  padding: 60px 15px 0;
+}
+
+/* espace entre le logo et le nav bar */
+
+.container-fluid .text-muted {
+  margin: 20px 0;
+}
+
+/* c koi sa? */
+
+.btn:focus, a:focus {
+  outline: none !important;
+}
+
+/* change la couleur du navbar */
+
+.navbar {
+  height: 70px;
+  background-color: black;
+  background: black;
+  border: none;
+  color: #f0f0e6;
+  z-index: 100;
+  margin-bottom: 0;
+  border-radius: 0;
+  transition: background-color 1s ease 0s;
+}
+
+/* pagne ds le navbar  */
+
+.navbar-brand {
+  display: none;
+  margin-top: 10px;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+/* navbarrrrr */
+
+.navbar-default .navbar-nav>li>a {
+  color: #f0f0e6;
+  font-weight: 500;
+  font-size: 1em;
+  /* text-transform: lowercase; */
+  margin: 10px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus {
+  color: #f0f0e6;
+  border: 1px solid #f0f0e6;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+  color: #f0f0e6;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  color: #f0f0e6;
+}
+/*
+.navbar-default .navbar-toggle {
+  border-color: #f0f0e6;
+} */
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: #f0f0e6;
+  background-color: #f0f0e6;
+}
+
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color:black;
+}
+
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar.solid .navbar-nav>li>a {
+  color: black;
+  /* transition: color 1s ease 0s; */
+}
+
+/*space between navbar and logo */
+
+.cover {
+  padding: 10% 0 10% 0;
+}
+
+.cover.bottom {
+  padding: 10% 0 10% 0;
+}
+
+.services, .services-info, .services-tools, .services-last {
+  padding: 4% 10% 1% 10%;
+  font-size: 1.25em;
+}
+
+.services-tools {
+  padding-top: 4.375em;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+
+/* team */
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: black;
+
+}
+
+/* hover images "meet the team" */
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+} */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} */
+/* .item:hover .overlay {
+  opacity: 1;
+} */
+.card {
+  position: relative;
+  width: 50%;
+}
+
+.boutton  {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+display: inline-block;
+margin-left: 130px;
+margin-top: 40px;
+border-radius: 10%;
+}
+
+.boutton:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #f7f7f7;
+}
+.boutton:nth-of-type(2):after {
+  left: 0;
+}
+.boutton:nth-of-type(3):after {
+  right: 0;
+  left: auto;
+}
+.boutton:nth-of-type(4):after {
+  left: 0;
+  bottom: auto;
+  top: -3px;
+  width: 100%;
+}
+.boutton:nth-of-type(5):after {
+  height: 120%;
+  left: -10%;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  z-index: -1;
+}
+.boutton:hover {
+  cursor: pointer;
+}
+.boutton:hover:after {
+  width: 100%;
+  left: 0;
+}
+.boutton:hover:nth-of-type(4):after {
+  top: calc(100% - 3px);
+}
+.boutton:hover:nth-of-type(5) {
+  color: #5bcaff;
+}
+.boutton:hover:nth-of-type(5):after {
+  left: -10%;
+  width: 120%;
+}
+.boutton:hover:nth-of-type(6) {
+  flex-grow: 3;
+}
+.boutton:hover:nth-of-type(6):after {
+  width: 0%;
+}
+.boutton:hover:nth-of-type(7) {
+  border-radius: 30px;
+}
+.boutton:hover:nth-of-type(7):after {
+  width: 0%;
+}
+.boutton:hover:nth-of-type(8) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.boutton:hover:nth-of-type(8):after {
+  width: 0%;
+}
+.b0utton:hover:nth-of-type(9) {
+  box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+}
+.boutton:hover:nth-of-type(9):after {
+  width: 0%;
+}
+.boutton:hover:nth-of-type(10) {
+  box-shadow: 0px 0px 0px 3px #f7f7f7;
+}
+.button:hover:nth-of-type(10):after {
+  width: 0%;
+}
+
+
+@media screen and (max-width: 540px) {
+  .imageLogo {
+    width: 70%;
+    margin: 20px;
+    margin-left: 9px;
+  }
+  .animatedgif{
+    width: 100%;
+    margin: 7px;
+    margin-left: -2px;
+  }
+.boutton{
+  text-align: center;
+  margin-left: 55px;
+width: 60%;
+
+}
+}
+@media screen and (min-width: 1668px){
+body{
+  margin-left: 250px;
+}
+}

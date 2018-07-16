@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+
+.image{
+margin-bottom: 50px;
+}
+body {
+  background-image: url("ServicesBG.png");
+  background-attachment: fixed;
+  font-family: 'Comfortaa', sans-serif;
+}
+/*  basically the title */
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+/*Neon  Glowww */
+ h1.yellow {
+  color: #FFDD1B;
+  text-shadow: 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px#FFDD1B, 0 0 10px #FFDD1B, 0 0 10px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B;
+}
+
+.yellow {
+    border-radius: 200px;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 65px;
+    letter-spacing: 7px;
+    /* color: #FFFFFF; */
+    line-height: 0.4;
+    filter: drop-shadow(0px 0px 5px #FFDD1B);
+    -webkit-text-stroke: 1px #fff;
+    display: inline-block;
+    position: relative;
+    animation: glow 2900ms ease infinite forwards;
+}
+
+@keyframes glow {
+    0% {
+
+    }
+    50% {
+        filter: drop-shadow(0px 0px 8px #FFDD1B);
+    }
+    100% {
+
+    }
+}
+/* end of Neon colors */
+
+/* cards  */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+* {
+  box-sizing: border-box;
+
+}
+
+
+h3  {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px#FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B;
+}
+
+/* the yellow line after the title of the service */
+hr {
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #D0BB57;
+  color: #FFFFFF;
+  text-shadow: 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px#FFDD1B, 0 0 5px #FFDD1B, 0 0 5px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B, 0 0 1px #FFDD1B;
+
+
+}
+.container1{
+  margin-right: 10%;
+}
+@media screen and (min-width: 1668px){
+body{
+  margin-left: 250px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    width: 100%;
+    margin: -20px;
+  }
+.row1{
+  opacity: 1;
+}
+
+
+}
+@media screen and (max-width: 540px) {
+  .container1 {
+    width: 100%;
+    margin-left: -10px;
+  }
+
+.image{
+  width: 100%;
+
+}
+
+
+
+}
